@@ -19,8 +19,8 @@ API which  will add the movies stickers and a link from which the users can to d
 """)
 
 # Loading the data
-movies = pd.read_csv("C:\\Users\\moses\\Downloads\\ml-latest-small\\ml-latest-small\\movies.csv")
-ratings = pd.read_csv("C:\\Users\\moses\\Downloads\\ml-latest-small\\ml-latest-small\\ratings.csv")
+movies = pd.read_csv("movies.csv")
+ratings = pd.read_csv("ratings.csv")
 
 movie_df = movies.merge(ratings, on="movieId")
 
